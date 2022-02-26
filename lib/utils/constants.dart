@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
 
-const kButton = Color(0xFF0066FF);
-const kAvatar = Color(0xFFCCE0FF);
+const kPrimary = Color(0xFF0066FF);
+const kSecondary = Color(0xFFCCE0FF);
