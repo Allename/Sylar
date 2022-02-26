@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sylar/screens/onboarding/get_started.dart';
 import 'package:sylar/utils/constants.dart';
 import 'package:sylar/widgets/button.dart';
 
@@ -14,6 +15,7 @@ class Intro extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget> [
+            SizedBox(height: 10.0),
             const Image(image: AssetImage('assets/images/Image.png')),
             const SizedBox(height: 35.0),
             Container(
@@ -81,7 +83,7 @@ class Intro extends StatelessWidget {
               ],
             ),
             SizedBox(height: 239.0),
-            Button(text: 'Get Started', press: () {}),
+            Button(text: 'Get Started', press: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GetStarted()))),
             SizedBox(height: 20.0),
             GestureDetector(
               onTap: () {},
