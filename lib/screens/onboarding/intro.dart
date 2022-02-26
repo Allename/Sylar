@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sylar/widgets/button.dart';
 
 class Intro extends StatelessWidget {
   const Intro({ Key? key }) : super(key: key);
@@ -7,7 +8,7 @@ class Intro extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(16.0),
         width: MediaQuery.of(context).size.width,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -34,7 +35,10 @@ class Intro extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 60.0),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget> [
                 Row(
                   children: const <Widget> [
@@ -47,8 +51,21 @@ class Intro extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(height: 40.0),
+                Row(
+                  children: const <Widget> [
+                    CircleAvatar(
+                      radius: 20.5,
+                      backgroundImage: AssetImage('assets/images/lock.png'),
+                    ),
+                    Text(
+                      '',
+                    ),
+                  ],
+                ),
               ],
             ),
+            Button(text: 'Get Started', press: () {}),
           ],
         ),
       ),
