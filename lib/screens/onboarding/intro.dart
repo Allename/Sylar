@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sylar/utils/constants.dart';
 import 'package:sylar/widgets/button.dart';
 
 class Intro extends StatelessWidget {
@@ -46,8 +47,15 @@ class Intro extends StatelessWidget {
                       radius: 20.5,
                       backgroundImage: AssetImage('assets/images/cash.png'),
                     ),
-                    Text(
-                      '',
+                    SizedBox(width: 20.0),
+                    Flexible(
+                      child: Text(
+                        'Send money to friends and family saved on your device',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -58,14 +66,34 @@ class Intro extends StatelessWidget {
                       radius: 20.5,
                       backgroundImage: AssetImage('assets/images/lock.png'),
                     ),
-                    Text(
-                      '',
+                    SizedBox(width: 20.0),
+                    Flexible(
+                      child: Text(
+                        'Save your money and prevent sapa in the future',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                     ),
                   ],
                 ),
               ],
             ),
+            SizedBox(height: 239.0),
             Button(text: 'Get Started', press: () {}),
+            SizedBox(height: 20.0),
+            GestureDetector(
+              onTap: () {},
+              child: const Text(
+                'Login',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: kPrimary,
+                ),
+              ),
+            ),
           ],
         ),
       ),
