@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sylar/utils/constants.dart';
+import 'package:sylar/widgets/button.dart';
 import 'package:sylar/widgets/header.dart';
 
 class GetStarted extends StatelessWidget {
@@ -99,6 +100,16 @@ class GetStarted extends StatelessWidget {
                  ],
                ),
              ),
+             const SizedBox(height: 83.0),
+             const Text(
+               'By continuing, you agree to the Privacy Policy and Terms and Conditions',
+               style: TextStyle(
+                 fontSize: 14,
+                 fontWeight: FontWeight.w400,
+               ),
+             ),
+              const SizedBox(height: 16.0),
+              Button(text: 'Get Started', press: () {}),
             ],
           ),
         ),
@@ -112,37 +123,3 @@ class GetStarted extends StatelessWidget {
 
 
 
-// const Text(
-//                   'Email',
-//                   style: TextStyle(
-//                     fontSize: 14,
-//                     fontWeight: FontWeight.w400,
-//                   ),
-//                 ),
-//                 const TextField(
-//                   keyboardType: TextInputType.emailAddress,
-//                   decoration: InputDecoration(
-//                     contentPadding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
-//                     fillColor: Colors.white,
-//                     filled: true,
-//                     hintText: 'you@example.com',
-//                     border: OutlineInputBorder(),
-//                   ),
-//                 ),
-
-//  SizedBox(height: 10.0),
-//                 Row(
-//                   children: <Widget> [
-//                     TextField(
-//                     keyboardType: TextInputType.number,
-//                     inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-//                       decoration: const InputDecoration(
-//                       contentPadding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
-//                       fillColor: Colors.white,
-//                       filled: true,
-//                       hintText: 'Your phone number',
-//                       border: OutlineInputBorder(),
-//                       ),
-//                     ),
-//                   ],
-//                 ),
