@@ -62,6 +62,7 @@ class Login extends StatelessWidget {
                       border: OutlineInputBorder(),
                     ),
                   ),
+                  const SizedBox(height: 50.0),
                   Button(text: 'Login', press: () {}),
                   const SizedBox(height: 10.0),
                   Row(
