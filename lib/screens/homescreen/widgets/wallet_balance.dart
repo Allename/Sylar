@@ -19,6 +19,7 @@ class WalletBalance extends StatelessWidget {
               color: kSecondary,
             ),
           ),
+          const SizedBox(height: 9.0),
         ],
       ),
     );
