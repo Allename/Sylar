@@ -63,6 +63,7 @@ class Login extends StatelessWidget {
                     ),
                   ),
                   Button(text: 'Login', press: () {}),
+                  const SizedBox(height: 10.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget> [
