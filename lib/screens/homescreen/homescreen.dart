@@ -14,9 +14,23 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
         child: Container(
+          width: MediaQuery.of(context).size.width,
           child: Column(
             children: <Widget> [
-              Stack(),
+              Stack(
+                children: <Widget> [
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 148,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/Stack.png'),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),

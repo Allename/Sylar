@@ -1,6 +1,7 @@
 // ignore_for_file: unnecessary_string_escapes
 
 import 'package:flutter/material.dart';
+import 'package:sylar/screens/homescreen/homescreen.dart';
 import 'package:sylar/utils/constants.dart';
 import 'package:sylar/widgets/button.dart';
 import 'package:sylar/widgets/header.dart';
@@ -64,7 +65,7 @@ class Login extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 290.0),
-                  Button(text: 'Login', press: () {}),
+                  Button(text: 'Login', press: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const HomeScreen()))),
                   const SizedBox(height: 10.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
