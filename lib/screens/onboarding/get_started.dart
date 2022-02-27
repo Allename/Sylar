@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sylar/screens/onboarding/login.dart';
 import 'package:sylar/utils/constants.dart';
 import 'package:sylar/widgets/button.dart';
 import 'package:sylar/widgets/header.dart';
@@ -89,7 +90,8 @@ class GetStarted extends StatelessWidget {
                     ),
                     const SizedBox(height: 10.0),
                     const TextField(
-                      keyboardType: TextInputType.visiblePassword,
+                      autofocus: false,
+                      obscureText: true,
                       decoration: InputDecoration(
                         fillColor: Colors.white,
                         filled: true,
@@ -103,6 +105,7 @@ class GetStarted extends StatelessWidget {
              const SizedBox(height: 83.0),
              const Text(
                'By continuing, you agree to the Privacy Policy and Terms and Conditions',
+               textAlign: TextAlign.center,
                style: TextStyle(
                  fontSize: 14,
                  fontWeight: FontWeight.w400,
@@ -110,6 +113,29 @@ class GetStarted extends StatelessWidget {
              ),
               const SizedBox(height: 16.0),
               Button(text: 'Get Started', press: () {}),
+              const SizedBox(height: 16.0),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget> [
+                  const Text(
+                    'Already have an account?',
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const Login())),
+                    child: const Text(
+                      'Login',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),

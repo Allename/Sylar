@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sylar/screens/onboarding/get_started.dart';
+import 'package:sylar/screens/onboarding/login.dart';
 import 'package:sylar/utils/constants.dart';
 import 'package:sylar/widgets/button.dart';
 
@@ -86,7 +87,7 @@ class Intro extends StatelessWidget {
             Button(text: 'Get Started', press: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GetStarted()))),
             SizedBox(height: 20.0),
             GestureDetector(
-              onTap: () {},
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const Login())),
               child: const Text(
                 'Login',
                 style: TextStyle(
