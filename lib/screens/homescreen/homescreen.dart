@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sylar/screens/homescreen/widgets/transact_button.dart';
 import 'package:sylar/screens/homescreen/widgets/wallet_balance.dart';
 import 'package:sylar/utils/constants.dart';
 
@@ -35,10 +36,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-              Row(
-                children: <Widget> [
-                  
-                ],
+              Container(
+                width: MediaQuery.of(context).size.width,
+                child: Row(
+                  children: <Widget> [
+                    TransactButton(color: kPrimary, press: () {}),
+                  ],
+                ),
               ),
             ],
           ),
