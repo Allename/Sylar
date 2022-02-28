@@ -84,7 +84,7 @@ class Intro extends StatelessWidget {
               ],
             ),
             SizedBox(height: 239.0),
-            Button(text: 'Get Started', color: kPrimary, press: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GetStarted()))),
+            Button(text: 'Get Started', press: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GetStarted()))),
             SizedBox(height: 20.0),
             GestureDetector(
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const Login())),
