@@ -42,7 +42,7 @@ class TransactButton extends StatelessWidget {
               child: TextButton(
                 style: TextButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 38.0),
-                  backgroundColor: kSecondary,
+                  backgroundColor: kFund,
                   shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(5)),
                   ),
