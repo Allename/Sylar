@@ -11,7 +11,7 @@ class TransactButton extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             SizedBox(
               width: 160,
@@ -35,7 +35,6 @@ class TransactButton extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(width: 24.0),
             SizedBox(
               width: 160,
               height: 50,
