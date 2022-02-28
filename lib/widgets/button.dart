@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:sylar/utils/constants.dart';
 
 class Button extends StatelessWidget {
   final String text;
+  final Color color;
   final VoidCallback press;
-  const Button({ Key? key, required this.text, required this.press}) : super(key: key);
+  const Button({ Key? key, required this.text, required this.press, required this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class Button extends StatelessWidget {
       child: TextButton(
         style: TextButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 18.0, horizontal: 20.0),
-          backgroundColor: kPrimary,
+          backgroundColor: color,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(5)),
           ),

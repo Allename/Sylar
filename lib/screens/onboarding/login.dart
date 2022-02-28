@@ -65,7 +65,7 @@ class Login extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 290.0),
-                  Button(text: 'Login', press: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const HomeScreen()))),
+                  Button(text: 'Login', color: kPrimary, press: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const HomeScreen()))),
                   const SizedBox(height: 10.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,

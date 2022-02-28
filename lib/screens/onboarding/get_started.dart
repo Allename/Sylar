@@ -112,7 +112,7 @@ class GetStarted extends StatelessWidget {
                ),
              ),
               const SizedBox(height: 16.0),
-              Button(text: 'Get Started', press: () {}),
+              Button(text: 'Get Started', color: kPrimary, press: () {}),
               const SizedBox(height: 16.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

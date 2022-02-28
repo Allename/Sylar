@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sylar/screens/homescreen/widgets/wallet_balance.dart';
 import 'package:sylar/utils/constants.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -30,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         fit: BoxFit.cover,
                       ),
                     ),
+                    child: const WalletBalance(text: 'Wallet Balance', price: 'NGN 0.00'),
                   ),
                 ],
               ),

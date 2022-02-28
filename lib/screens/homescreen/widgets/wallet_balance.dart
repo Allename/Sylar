@@ -10,6 +10,7 @@ class WalletBalance extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget> [
           Text(
             text,
@@ -20,6 +21,14 @@ class WalletBalance extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 9.0),
+          Text(
+            price,
+            style: const TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.w600,
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
     );
