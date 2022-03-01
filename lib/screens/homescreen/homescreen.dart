@@ -20,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Container(
           width: MediaQuery.of(context).size.width,
           child: Column(
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget> [
               Stack(
                 children: <Widget> [
@@ -36,9 +37,22 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-              SizedBox(height: 16.0),
-              TransactButton(),
-              
+              const SizedBox(height: 16.0),
+              const TransactButton(),
+              const SizedBox(height: 32.0),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const <Widget> [
+                  Text(
+                    'Explore',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  SizedBox(height: 21.0),
+                ],
+              ),
             ],
           ),
         ),
