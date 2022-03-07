@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sylar/screens/homescreen/widgets/items.dart';
 import 'package:sylar/screens/homescreen/widgets/transact_button.dart';
 import 'package:sylar/screens/homescreen/widgets/wallet_balance.dart';
 import 'package:sylar/utils/constants.dart';
@@ -40,18 +41,22 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(height: 16.0),
               const TransactButton(),
               const SizedBox(height: 32.0),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: const <Widget> [
-                  Text(
-                    'Explore',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const <Widget> [
+                    Text(
+                      'Explore',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                  ),
-                  SizedBox(height: 21.0),
-                ],
+                    SizedBox(height: 21.0),
+                    Items(image: 'assets/images/gift.png', text: 'Airtime recharge'),
+                  ],
+                ),
               ),
             ],
           ),

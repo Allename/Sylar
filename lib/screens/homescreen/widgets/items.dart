@@ -8,19 +8,26 @@ class Items extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        children: <Widget> [
-          Container(
-            width: 50,
-            height: 50,
-            color: kSecondary,
-            child: Center(
-              child: Image.asset(image),
-            ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: <Widget> [
+        Container(
+          width: 50,
+          height: 50,
+          color: kSecondary,
+          child: Center(
+            child: Image.asset(image),
           ),
-        ],
-      ),
+        ),
+        Text(
+          text,
+          style: const TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        const Icon(Icons.arrow_forward_ios_sharp),
+      ],
     );
   }
 }
