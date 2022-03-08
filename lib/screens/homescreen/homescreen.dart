@@ -61,9 +61,28 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-              SizedBox(height: 37.0),
+              const SizedBox(height: 20.0),
               const Image(
                 image: AssetImage('assets/images/banner.png'),
+              ),
+              const SizedBox(height: 32.0),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children:  <Widget> [
+                  const Text(
+                    'Savings Plan',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
