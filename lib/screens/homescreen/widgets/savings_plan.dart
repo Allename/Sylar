@@ -19,8 +19,21 @@ class SavingsPlan extends StatelessWidget {
                 image: DecorationImage(
                   image: AssetImage(image),
                   fit: BoxFit.cover,
-                  
                 ),
+              ),
+            ),
+            Text(
+              title,
+              style: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            Text(
+              price,
+              style: TextStyle(
+                fontSize: 14,
+                
               ),
             ),
           ],
