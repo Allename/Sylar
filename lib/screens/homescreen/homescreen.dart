@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const <Widget> [
                           SavingsPlan(image: 'assets/images/EscapeSapa.png', title: 'Escape Sapa', price: 'NGN 2,000/wk'),
                           SavingsPlan(image: 'assets/images/RichClub.png', title: 'Rich Club', price: 'NGN 100,000/wk'),
@@ -100,6 +100,33 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_rounded),
+            label: 'Home',
+            backgroundColor: kPrimary,
+          ),
+
+          BottomNavigationBarItem(
+            icon: Icon(Icons.savings_rounded),
+            label: 'Settings',
+            backgroundColor: kPrimary,
+          ),
+
+          BottomNavigationBarItem(
+            icon: Icon(Icons.send_rounded),
+            label: 'Transcations',
+            backgroundColor: kPrimary,
+          ),
+
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings_applications_rounded),
+            label: 'Settings',
+            backgroundColor: kPrimary,
+          ),
+        ],
       ),
     );
   }
