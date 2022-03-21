@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sylar/screens/homescreen/widgets/items.dart';
+import 'package:sylar/screens/homescreen/widgets/savings_plan.dart';
 import 'package:sylar/screens/homescreen/widgets/transact_button.dart';
 import 'package:sylar/screens/homescreen/widgets/wallet_balance.dart';
 import 'package:sylar/utils/constants.dart';
@@ -79,7 +80,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
-                      
+                      children: const <Widget> [
+                        SavingsPlan(image: 'assets/images/EscapeSapa.png', title: 'Escape Sapa', price: 'NGN 2,000/wk'),
+                      ],
                     ),
                   ),
                 ],
