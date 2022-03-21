@@ -28,6 +28,7 @@ class SavingsPlan extends StatelessWidget {
             ),
           ],
         ),
+        const SizedBox(height: 8.0),
         Text(
           title,
           style: const TextStyle(
@@ -35,6 +36,7 @@ class SavingsPlan extends StatelessWidget {
             fontWeight: FontWeight.w400,
           ),
         ),
+        const SizedBox(height: 8.0),
         Text(
           price,
           style: const TextStyle(

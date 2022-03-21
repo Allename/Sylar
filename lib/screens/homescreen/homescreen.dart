@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Container(
           width: MediaQuery.of(context).size.width,
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget> [
               Stack(
                 children: <Widget> [
@@ -62,30 +62,40 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-              const SizedBox(height: 20.0),
-              const Image(
-                image: AssetImage('assets/images/banner.png'),
-              ),
-              const SizedBox(height: 32.0),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children:  <Widget> [
-                  const Text(
-                    'Savings Plan',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children:  <Widget> [
+                    const SizedBox(height: 20.0),
+                    const SizedBox(
+                      width: double.infinity,
+                      child: Image(
+                        image: AssetImage('assets/images/banner.png'),
+                      ),
                     ),
-                  ),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: const <Widget> [
-                        SavingsPlan(image: 'assets/images/EscapeSapa.png', title: 'Escape Sapa', price: 'NGN 2,000/wk'),
-                      ],
+                    const SizedBox(height: 32.0),
+                    const Text(
+                      'Savings Plan',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                  ),
-                ],
+                    const SizedBox(height: 16.0),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: const <Widget> [
+                          SavingsPlan(image: 'assets/images/EscapeSapa.png', title: 'Escape Sapa', price: 'NGN 2,000/wk'),
+                          SavingsPlan(image: 'assets/images/RichClub.png', title: 'Rich Club', price: 'NGN 100,000/wk'),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
